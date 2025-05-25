@@ -134,7 +134,6 @@ export default function AuthCard() {
             <button type="submit" className="btn-primary">
               {isSignInActive ? "Kirish" : "Ro'yxatdan o'tish"}
             </button>
-          <a href="/apiregister903248756894934250"> 2-namuna</a>
 
           </form>
         </div>
