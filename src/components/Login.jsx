@@ -62,7 +62,7 @@ export default function AuthCard() {
       <div className="card">
         {/* Chap panel */}
         <div className={`left-panel ${isSignInActive ? "" : "order-2"}`}>
-          <h2 className="title">{isSignInActive ? "Sign In" : "Sign Up"}</h2>
+          <h2 className="title">{isSignInActive ? "Kirish" : "Ro'yxatdan o'tish"}</h2>
           <form className="form" onSubmit={handleSubmit}>
             {/* Email */}
             <div className="form-group">
@@ -73,7 +73,7 @@ export default function AuthCard() {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="emailingizni kiriting"
                 className="input"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -85,13 +85,13 @@ export default function AuthCard() {
             {!isSignInActive && (
               <div className="form-group">
                 <label className="label" htmlFor="username">
-                  USERNAME
+                  Ismingiz
                 </label>
                 <input
                   id="username"
                   name="username"
                   type="text"
-                  placeholder="Choose a username"
+                  placeholder="Ismingizni kiriting"
                   className="input"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
@@ -103,13 +103,13 @@ export default function AuthCard() {
             {/* Parol */}
             <div className="form-group">
               <label className="label" htmlFor="password">
-                PASSWORD
+                Parol
               </label>
               <input
                 id="password"
                 name="password"
                 type="password"
-                placeholder="Enter your password"
+                placeholder="parolingizni kiriting"
                 className="input"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -122,17 +122,17 @@ export default function AuthCard() {
               <div className="options">
                 <label className="checkbox-label">
                   <input type="checkbox" className="checkbox" />
-                  Remember me
+                  Meni eslab qol
                 </label>
-                <a href="a" className="forgot-link">
-                  Forgot your password?
+                <a href="/" className="forgot-link">
+                Parolingiz esdan chiqdimi?
                 </a>
               </div>
             )}
 
             {/* Submit button */}
             <button type="submit" className="btn-primary">
-              {isSignInActive ? "Sign In" : "Sign Up"}
+              {isSignInActive ? "Kirish" : "Ro'yxatdan o'tish"}
             </button>
           </form>
         </div>
@@ -142,15 +142,15 @@ export default function AuthCard() {
           onClick={togglePanels}
         >
           <h2 className="right-title">
-            {isSignInActive ? "Hello, Friend!" : "Welcome Back!"}
+            {isSignInActive ? "Salom,do'stim!" : "Qaytib kelganingizdan xursandmiz!"}
           </h2>
           <p className="right-text">
             {isSignInActive
-              ? "Register with your personal details to start and all new features"
-              : "To keep connected with us please login with your personal info"}
+              ? "Boshlash uchun shaxsiy ma'lumotlaringiz va barcha yangi xususiyatlar bilan ro'yxatdan o'ting"
+              : "Biz bilan aloqada bo'lish uchun shaxsiy ma'lumotlaringiz bilan tizimga kiring"}
           </p>
           <button className="btn-secondary">
-            {isSignInActive ? "SIGN UP" : "SIGN IN"}
+            {isSignInActive ? "Kirish " : "Ro'yxatdan o'tish "}
           </button>
         </div>
       </div>
