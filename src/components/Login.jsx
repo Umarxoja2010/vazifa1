@@ -151,7 +151,7 @@ export default function AuthCard() {
               : "Biz bilan aloqada bo'lish uchun shaxsiy ma'lumotlaringiz bilan tizimga kiring"}
           </p>
           <button className="btn-secondary">
-            {isSignInActive ? "Kirish " : "Ro'yxatdan o'tish "}
+            {isSignInActive ? " Ro'yxatdan o'tish " : " Kirish"}
           </button>
         </div>
       </div>
