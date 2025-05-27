@@ -36,6 +36,18 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 638px) {
+.card{
+  flex-direction: column;
+
+}
+.right-panel{
+  order: -1;
+  text-align: center;
+  margin:  auto;
+}
+
+}
 @media (min-width: 640px) {
   .card {
     flex-direction: row;
@@ -45,7 +57,7 @@ body {
 /* Left panel styling */
 .left-panel {
   background: white;
-  padding: 3rem 3rem 3rem 3rem;
+  padding: 1px 3rem 3rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -195,7 +207,6 @@ body {
 
 /* Right panel */
 .right-panel {
-  width: 100%;
   padding: 3rem 3rem;
   display: flex;
   flex-direction: column;
@@ -252,6 +263,7 @@ body {
   color: #1d4ed8;
   box-shadow: 0 6px 20px rgba(255, 255, 255, 0.6);
 }
+
 @media (max-width: 320px) {
     .card {
       flex-direction: column;

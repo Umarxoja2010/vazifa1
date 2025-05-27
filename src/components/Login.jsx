@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Login.css";
-
 export default function AuthCard() {
   const [isSignInActive, setIsSignInActive] = useState(true);
 
@@ -58,6 +57,7 @@ export default function AuthCard() {
   };
 
   return (
+    <div>
     <div className="container">
       <div className="card">
         {/* Chap panel */}
@@ -138,8 +138,7 @@ export default function AuthCard() {
           </form>
         </div>
         {/* O'ng panel */}
-        <div
-          className={`right-panel ${isSignInActive ? "" : "order-1"}`}
+        <div className={`right-panel ${isSignInActive ? "" : "order-1"}`}
           onClick={togglePanels}
         >
           <h2 className="right-title">
@@ -155,6 +154,7 @@ export default function AuthCard() {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 }
